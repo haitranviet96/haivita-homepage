@@ -2,17 +2,79 @@
 # For configuration options and examples, please see:
 # https://gethomepage.dev/latest/configs/services
 
-- My First Group:
-    - My First Service:
-        href: http://localhost/
-        description: Homepage is awesome
+- Media:
+  - Jellyfin:
+    icon: jellyfin
+    description: Multimedia Server
+    href: https://jellyfin.{{HOMEPAGE_VAR_DOMAIN}}/
+    container: jellyfin
+    widget:
+      type: jellyfin
+      url: jellyfin:8096
+      key: {{ HOMEPAGE_VAR_JELLYFIN_API_KEY }}
+      enableBlocks: true
+  - Radarr:
+    icon: radarr
+    description: Movies Manager
+    href: https://radarr.{{HOMEPAGE_VAR_DOMAIN}}/
+    container: radarr
+    widget:
+      type: radarr
+      fields: ["wanted", "queued"]
+      url: radarr:7878
+      key: {{ HOMEPAGE_VAR_RADARR_API_KEY }}
+  - Sonarr:
+    icon: sonarr
+    description: Series Manager
+    href: https://sonarr.{{HOMEPAGE_VAR_DOMAIN}}/
+    container: sonarr
+    widget:
+      type: sonarr
+      fields: ["wanted", "queued"]
+      url: sonarr:8989
+      key: {{ HOMEPAGE_VAR_SONARR_API_KEY }}
+  - Prowlarr:
+      icon: prowlarr
+      description: Indexers Manager
+      href: https://prowlarr.{{HOMEPAGE_VAR_DOMAIN}}/
+      container: prowlarr
+      widget:
+        type: prowlarr
+        url: prowlarr:9696
+        key: {{ HOMEPAGE_VAR_PROWLARR_API_KEY }}
+  - Bazarr:
+      icon: bazarr
+      description: Subtitles Manager
+      href: https://bazarr.{{HOMEPAGE_VAR_DOMAIN}}/
+      container: bazarr
+      widget:
+        type: bazarr
+        url: bazarr:6767
+        key: {{ HOMEPAGE_VAR_BAZARR_API_KEY }}
 
-- My Second Group:
-    - My Second Service:
-        href: http://localhost/
-        description: Homepage is the best
+- Data:
+  - "":
+    widget:
+      type: calendar
+      view: monthly # optional - possible values monthly, agenda
+      showTime: true # optional - show time for event happening today - defaults to false
+      integrations: # optional
+      - type: sonarr
+        service_group: Media # group name where widget exists
+        service_name: Sonarr # service name for that widget
+        color: teal # optional - defaults to pre-defined color for the service (teal for sonarr)
+        params: # optional - additional params for the service
+        unmonitored: true # optional - defaults to false, used with *arr stack
+      - type: radarr
+        service_group: Media # group name where widget exists
+        service_name: Radarr # service name for that widget
+        color: # optional - defaults to pre-defined color for the service (teal for sonarr)
+        params: # optional
+        unmonitored: true
+  - Caddy:
+    widget:
+      type: caddy
+      url: caddy:2019
 
-- My Third Group:
-    - My Third Service:
-        href: http://localhost/
-        description: Homepage is 😎
+- Services:
+  

@@ -2,6 +2,10 @@
 # For configuration options and examples, please see:
 # https://gethomepage.dev/latest/configs/service-widgets
 
+- greeting:
+    text_size: xl
+    text: 🧠 HaiViTa
+
 - resources:
     cpu: true
     memory: true

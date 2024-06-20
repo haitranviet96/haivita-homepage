@@ -1,44 +1,35 @@
-title: ENC[AES256_GCM,data:69rL1aHDJ/8ZLNsRGq97US4=,iv:J0mAu7X88ta4+NPW3g+K/W9fJjXHNHKBl2TGYxLDffw=,tag:q+AttqXscv2RDJtyaPBooQ==,type:str]
-background:
-    image: ENC[AES256_GCM,data:oAj91iSMjJ20BN4Z3LqfsKLKWcUhig==,iv:ZG26h4A/xROvXcB7w9i3yA5c3Qm6flWaiRArdaR5rz0=,tag:jsEzOZNsOcwXLvbcOZcZhw==,type:str]
-    #ENC[AES256_GCM,data:ej8/JX62iydvqJOiwUcmlNdCY3w005c+uLM0JCJDmuGm1SQKnEi3yOpazmMySWtWAZjHud2PU+vvRFAXiWPeAmw=,iv:tF4gPdQtKCOsSTc04GXjMjo/FcVKT4wxws/eLGe6Nmo=,tag:ghrfRGzrh2pJxGqZZP2xmw==,type:comment]
-    blur: ENC[AES256_GCM,data:2ZY=,iv:LsPEAkMJ15XaqxAVrR91Lj7ybAj1WmB4DRuyceM0DDI=,tag:3ayPLclQBw8oyy0E5n2pRg==,type:str]
-    #ENC[AES256_GCM,data:Cs2iBtYDJNw6jjgrf3xSfVVSWeGRk+eURaH9K6J0ARgkeKVoHjJsK7N2g6TUUJ0qYK6rtlfAj68jEArb6urM70M=,iv:eS6lIOgpVwyVrjCF322xEu39WCw9SeWFFcS+TolKGwQ=,tag:JYfbFWS08axR6qBBv5bUcg==,type:comment]
-    saturate: ENC[AES256_GCM,data:Q+4=,iv:KQh1VRcBzApGDAgT8C0EZ6W2L6MbP1TlRH65RjhSY24=,tag:v4TwNl0vsRWuLYzGqIfqww==,type:int]
-    #ENC[AES256_GCM,data:T7iNN3Xj3sr/xd+5bFCyLRWF2+YniQ0e8tIB3C0z6/ykN5nx8wzT0JqzaF8n3LsIiTAJP6GtWAuUln9zuAsg+Ux9,iv:S0IQybBUYu1ftLaql2W8SSLNkn4JS91cPHZE/8rNjRA=,tag:vKtwOiR2SG3psVghEYosrQ==,type:comment]
-    brightness: ENC[AES256_GCM,data:7SA=,iv:KsFu4XWLoYKfaMXPG2v6k+26PhN4H/jXb4SE3fXTySs=,tag:SKzoxUhoOQzTmZ+/HdwwtA==,type:int]
-    #ENC[AES256_GCM,data:VwYuKhsh,iv:DDegViP/vDmfd0JEP2KB65WbCs1NbhS3OYFGw8ipOmU=,tag:lEBIEp11TIh4xvnVzzFxFQ==,type:comment]
-    opacity: ENC[AES256_GCM,data:S+s=,iv:lqAsMESOPKHSeY5TOUxQpm8iRLsREX6/JWGjP5807o8=,tag:gr3gTqfyNkMxwU0C6QpAFw==,type:int]
-providers:
-    weatherapi: ENC[AES256_GCM,data:+obr9Wy42/UAQh5vp+NILsFKcCYXxnSo+LSzBnmT0K8=,iv:BVGkUP0AElSYWCYMTplYAgm7Adh4fQDCXGeP0rgm4hs=,tag:FNyMYm3gwXKPIYGA+c/kLA==,type:str]
-sops:
-    kms: []
-    gcp_kms: []
-    azure_kv: []
-    hc_vault: []
-    age: []
-    lastmodified: "2024-06-13T17:11:20Z"
-    mac: ENC[AES256_GCM,data:klWvWSOhrZPfGYlToUOt9olVA3ZDHOUFYbDg/JxnYqy4jAO5gnRzNcXh6E7kfOoFE9MQaAbcTy9J3DctQmjzZjZGVzR385h+yS9w+D3C7VrGIiniQr39PiogOIZ5mbo163ZaKkYTRKWKXQdN8+tpIy/7sXNpv+KA7ZqqD4IFYPw=,iv:Op63O1qcqNMupMEyLQ4i9U2Ffib/knuiSU5kN/Chcow=,tag:UOI2Rng6/J2CDSeAQpn1Bw==,type:str]
-    pgp:
-        - created_at: "2024-04-18T20:20:11Z"
-          enc: |-
-            -----BEGIN PGP MESSAGE-----
+title: HaiViTa Dashboard
 
-            hQIMA1eHMvPjG5BMARAAsL63tvj/PwJCKaL+VgldFtFrEPUI5hboxRCFPSfZp7sy
-            EvlisGt60mNAP8PiiDeuKB5Osy8IbUK4MtHCnJoeOzGaK+SRsX86Vyg6WiGxEu/M
-            A1K8S+ebATyi6w6CFZt2D+l9hEoEXAxSy6fCNUcU6yToG8a7U5V0IdAfcopgRnpn
-            j04CjnFn/9rR+L9A1tt1gnR7OEot9cPzqkvuDPrZx1wYVYNmY8s9hHFRXqx+3hKs
-            B1nbBLtBqfFm6ytmdX605qGIBqxjkC4j9egvtRAJMk9Epin50Vng+AxknmLlE4DM
-            YlQ888xHDgNdnwIHIZrsSYtzg2pL3MEQeEDbYsQz7SNhTfiNMN+Far4gs6Wq2lTf
-            9L7o3mcw13xCoa/PP0np3zi41lL2/vSoS2aQEiymLbiL/1mf60/q4w4Y5P8wlq2v
-            7KBOQ7MSllVmu9VHl9Rya69NgzPNcdd1tJ9FMbrTBpcPsLrBqpR/uTaEjWYWEkR6
-            GjBAE6fObTnw34iytYXaA7iUto4x5ZRUhFGAQP2e18Biu5HrB2SobPdU+UZrjDFj
-            7wryjjQ232VYFOIwqa/mxKoEF49QFNOf9rt2ctoCQg+adugCWdVSjLD8001uzeiA
-            /MFIq8QZKxzSEW/eUH73wdaJV3i/390fJAeIIZbEmGaXZ09EC1TtCAfQts14NZ/S
-            XAG4EpUWuosG6FvQZjbUKwqVilmjgrOmHUA7hTGLAlcltzZhC2futZHpw36ynxe7
-            XqiQFDnA2lJP3yMwwR3/bXWby2Dq8lrgIFAg+nnmquj8SbWojxqhck6XEFjO
-            =rTD/
-            -----END PGP MESSAGE-----
-          fp: 8E96E1CC979A93834A5F37AB8D8549888B14F99E
-    unencrypted_suffix: _unencrypted
-    version: 3.8.1
+background:
+    image: /images/background.jpg
+    # blur: sm          # sm, "", md, xl... see https://tailwindcss.com/docs/backdrop-blur
+    # saturate: 50      # 0, 50, 100... see https://tailwindcss.com/docs/backdrop-saturate
+    # brightness: 50    # 0, 50, 75... see https://tailwindcss.com/docs/backdrop-brightness    
+    opacity: 30         # 0-100
+
+favicon: /images/favicon.ico
+
+theme: dark
+color: zinc
+
+quicklaunch:
+  searchDescriptions: true
+  showSearchSuggestions: true
+  provider: google
+
+layout:
+  Media:
+    style: row
+    columns: 5
+  Data:
+    style: row
+    columns: 2
+    header: false
+  Services:
+    style: row
+    columns: 4
+
+providers:
+    weatherapi: {{HOMEPAGE_VAR_WEATHERAPI}}
+
+hideVersion: true
