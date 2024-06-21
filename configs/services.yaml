@@ -72,9 +72,36 @@
         params: # optional
         unmonitored: true
   - Caddy:
+    container: caddy
     widget:
       type: caddy
       url: caddy:2019
 
 - Services:
-  
+  - qBittorrent:
+    href: https://qbit.{{HOMEPAGE_VAR_DOMAIN}}/
+    container: qbittorrent
+    widget:
+      type: qbittorrent
+      url: qbittorrent:8080
+      username: {{HOMEPAGE_VAR_QBIT_USER}}
+      password: {{HOMEPAGE_VAR_QBIT_PASSWORD}}
+  - "Home Assistant":
+    href: https://home.{{HOMEPAGE_VAR_DOMAIN}}/
+    container: homeassistant
+    widget:
+      type: homeassistant
+      url: homeassistant:8123
+      key: {{HOMEPAGE_VAR_HOME_ASSISTANT_API_KEY}}
+      custom:
+        - state: sensor.total_power
+        - state: sensor.total_energy_today
+          label: energy today
+        - template: "{{ states.switch|selectattr('state','equalto','on')|list|length }}"
+          label: switches on
+        - state: weather.forecast_home
+          label: wind speed
+          value: "{attributes.wind_speed} {attributes.wind_speed_unit}"
+  - "Open WebUI":
+    href: https://chat.{{HOMEPAGE_VAR_DOMAIN}}/
+    container: open-webui
