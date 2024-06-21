@@ -11,7 +11,7 @@
         widget:
           type: jellyfin
           url: http://jellyfin:8096
-          key: {{ HOMEPAGE_VAR_JELLYFIN_API_KEY }}
+          key: {{HOMEPAGE_VAR_JELLYFIN_API_KEY}}
           enableBlocks: true
     - Radarr:
         icon: radarr
@@ -22,7 +22,7 @@
           type: radarr
           fields: ["wanted", "queued"]
           url: http://radarr:7878
-          key: {{ HOMEPAGE_VAR_RADARR_API_KEY }}
+          key: {{HOMEPAGE_VAR_RADARR_API_KEY}}
     - Sonarr:
         icon: sonarr
         description: Series Manager
@@ -32,7 +32,7 @@
           type: sonarr
           fields: ["wanted", "queued"]
           url: http://sonarr:8989
-          key: {{ HOMEPAGE_VAR_SONARR_API_KEY }}
+          key: {{HOMEPAGE_VAR_SONARR_API_KEY}}
     - Prowlarr:
         icon: prowlarr
         description: Indexers Manager
@@ -41,7 +41,7 @@
         widget:
           type: prowlarr
           url: http://prowlarr:9696
-          key: {{ HOMEPAGE_VAR_PROWLARR_API_KEY }}
+          key: {{HOMEPAGE_VAR_PROWLARR_API_KEY}}
     - Bazarr:
         icon: bazarr
         description: Subtitles Manager
@@ -50,7 +50,7 @@
         widget:
           type: bazarr
           url: http://bazarr:6767
-          key: {{ HOMEPAGE_VAR_BAZARR_API_KEY }}
+          key: {{HOMEPAGE_VAR_BAZARR_API_KEY}}
 
 - Data:
     - "":
@@ -84,20 +84,20 @@
         widget:
           type: qbittorrent
           url: http://qbittorrent:8080
-          username: {{ HOMEPAGE_VAR_QBIT_USER }}
-          password: {{ HOMEPAGE_VAR_QBIT_PASSWORD }}
+          username: {{HOMEPAGE_VAR_QBIT_USER}}
+          password: {{HOMEPAGE_VAR_QBIT_PASSWORD}}
     - "Home Assistant":
         href: https://home.{{HOMEPAGE_VAR_DOMAIN}}/
         container: homeassistant
         widget:
           type: homeassistant
           url: http://homeassistant:8123
-          key: {{ HOMEPAGE_VAR_HOME_ASSISTANT_API_KEY }}
+          key: {{HOMEPAGE_VAR_HOME_ASSISTANT_API_KEY}}
           custom:
             - state: sensor.total_power
             - state: sensor.total_energy_today
               label: energy today
-            - template: "{{ states.switch|selectattr('state','equalto','on')|list|length }}"
+            - template: "{{states.switch|selectattr('state','equalto','on')|list|length}}"
               label: switches on
             - state: weather.forecast_home
               label: wind speed
