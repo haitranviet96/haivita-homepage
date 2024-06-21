@@ -10,7 +10,7 @@
     container: jellyfin
     widget:
       type: jellyfin
-      url: jellyfin:8096
+      url: http://jellyfin:8096
       key: {{ HOMEPAGE_VAR_JELLYFIN_API_KEY }}
       enableBlocks: true
   - Radarr:
@@ -21,7 +21,7 @@
     widget:
       type: radarr
       fields: ["wanted", "queued"]
-      url: radarr:7878
+      url: http://radarr:7878
       key: {{ HOMEPAGE_VAR_RADARR_API_KEY }}
   - Sonarr:
     icon: sonarr
@@ -31,7 +31,7 @@
     widget:
       type: sonarr
       fields: ["wanted", "queued"]
-      url: sonarr:8989
+      url: http://sonarr:8989
       key: {{ HOMEPAGE_VAR_SONARR_API_KEY }}
   - Prowlarr:
       icon: prowlarr
@@ -40,7 +40,7 @@
       container: prowlarr
       widget:
         type: prowlarr
-        url: prowlarr:9696
+        url: http://prowlarr:9696
         key: {{ HOMEPAGE_VAR_PROWLARR_API_KEY }}
   - Bazarr:
       icon: bazarr
@@ -49,7 +49,7 @@
       container: bazarr
       widget:
         type: bazarr
-        url: bazarr:6767
+        url: http://bazarr:6767
         key: {{ HOMEPAGE_VAR_BAZARR_API_KEY }}
 
 - Data:
@@ -75,7 +75,7 @@
     container: caddy
     widget:
       type: caddy
-      url: caddy:2019
+      url: http://caddy:2019
 
 - Services:
   - qBittorrent:
@@ -83,7 +83,7 @@
     container: qbittorrent
     widget:
       type: qbittorrent
-      url: qbittorrent:8080
+      url: http://qbittorrent:8080
       username: {{HOMEPAGE_VAR_QBIT_USER}}
       password: {{HOMEPAGE_VAR_QBIT_PASSWORD}}
   - "Home Assistant":
@@ -91,7 +91,7 @@
     container: homeassistant
     widget:
       type: homeassistant
-      url: homeassistant:8123
+      url: http://homeassistant:8123
       key: {{HOMEPAGE_VAR_HOME_ASSISTANT_API_KEY}}
       custom:
         - state: sensor.total_power
