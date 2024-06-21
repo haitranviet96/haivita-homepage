@@ -29,7 +29,8 @@ layout:
     style: row
     columns: 4
 
+useEqualHeights: true
+hideVersion: true
+
 providers:
     weatherapi: {{HOMEPAGE_VAR_WEATHERAPI}}
-
-hideVersion: true

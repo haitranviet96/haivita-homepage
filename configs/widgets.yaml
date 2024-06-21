@@ -2,15 +2,25 @@
 # For configuration options and examples, please see:
 # https://gethomepage.dev/latest/configs/service-widgets
 
+- logo:
+    icon: /images/logo.png
+
 - greeting:
-    text_size: xl
-    text: 🧠 HaiViTa
+      text_size: xl
+      text: HaiViTa
 
 - resources:
-    cpu: true
-    memory: true
-    disk: /
+      cpu: true
+      memory: true
+      disk: /
 
 - search:
-    provider: duckduckgo
-    target: _blank
+      provider: duckduckgo
+      target: _blank
+
+# 13:37
+- datetime:
+      text_size: xl
+      format:
+          timeStyle: short
+          hourCycle: h23

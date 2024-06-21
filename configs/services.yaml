@@ -13,6 +13,7 @@
           url: http://jellyfin:8096
           key: {{HOMEPAGE_VAR_JELLYFIN_API_KEY}}
           enableBlocks: true
+          enableNowPlaying: false
     - Radarr:
         icon: radarr
         description: Movies Manager
@@ -72,6 +73,7 @@
                 params: # optional
                 unmonitored: true
     - Caddy:
+        icon: caddy
         container: caddy
         widget:
           type: caddy
@@ -79,6 +81,7 @@
 
 - Services:
     - qBittorrent:
+        icon: qbittorrent
         href: https://qbit.{{HOMEPAGE_VAR_DOMAIN}}/
         container: qbittorrent
         widget:
@@ -87,6 +90,7 @@
           username: {{HOMEPAGE_VAR_QBIT_USER}}
           password: {{HOMEPAGE_VAR_QBIT_PASSWORD}}
     - "Home Assistant":
+        icon: home-assistant
         href: https://home.{{HOMEPAGE_VAR_DOMAIN}}/
         container: homeassistant
         widget:
@@ -103,5 +107,6 @@
               label: wind speed
               value: "{attributes.wind_speed} {attributes.wind_speed_unit}"
     - "Open WebUI":
+        icon: open-webui-light
         href: https://chat.{{HOMEPAGE_VAR_DOMAIN}}/
         container: open-webui
