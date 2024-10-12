@@ -20,12 +20,15 @@ quicklaunch:
 layout:
   Media:
     style: row
-    columns: 5
+    columns: 3
   Data:
     style: row
     columns: 2
     header: false
   Services:
+    style: row
+    columns: 4
+  Cloud:
     style: row
     columns: 4
 
