@@ -10,9 +10,15 @@
       text: HaiViTa
 
 - resources:
+      label: System
       cpu: true
       memory: true
-      disk: /
+
+- resources:
+      label: Storage
+      disk:
+       - /
+       - /mnt/data
 
 - search:
       provider: duckduckgo

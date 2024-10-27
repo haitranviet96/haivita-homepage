@@ -21,9 +21,9 @@ layout:
   Media:
     style: row
     columns: 3
+  Calendar:
+    header: false
   Data:
-    style: row
-    columns: 2
     header: false
   Services:
     style: row

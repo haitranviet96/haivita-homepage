@@ -13,6 +13,7 @@ services:
       - ./configs:/app/config
       - ${HOME}/homepage/images:/app/public/images
       - /var/run/docker.sock:/var/run/docker.sock
+      - /media/Data:/mnt/data:ro
     restart: unless-stopped
     networks:
       - daimo-dc
