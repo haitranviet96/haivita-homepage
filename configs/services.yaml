@@ -83,14 +83,7 @@
               params: # optional
               unmonitored: true
 
-- Data:
-  - Caddy:
-      icon: caddy
-      description: Web Server
-      container: caddy
-      widget:
-        type: caddy
-        url: http://caddy:2019
+- Data1:
   - WUD:
       icon: whats-up-docker-light
       description: Docker Container Version Manager
@@ -100,6 +93,23 @@
         url: http://wud:3000
         username: {{HOMEPAGE_VAR_WUD_USER}}
         password: {{HOMEPAGE_VAR_WUD_PASSWORD}}
+  - Uptime:
+      icon: uptime-kuma
+      description: Uptime Monitor
+      href: https://up.{{HOMEPAGE_VAR_DOMAIN}}/
+      widget:
+        type: uptimekuma
+        url: http://uptime-kuma:3001
+        slug: haivita
+
+- Data2:
+  - Caddy:
+      icon: caddy
+      description: Web Server
+      container: caddy
+      widget:
+        type: caddy
+        url: http://caddy:2019
 
 - Services:
   - qBittorrent:

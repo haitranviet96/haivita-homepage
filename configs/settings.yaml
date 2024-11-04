@@ -23,7 +23,9 @@ layout:
     columns: 3
   Calendar:
     header: false
-  Data:
+  Data1:
+    header: false
+  Data2:
     header: false
   Services:
     style: row
