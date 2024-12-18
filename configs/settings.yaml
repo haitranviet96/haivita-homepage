@@ -18,6 +18,9 @@ quicklaunch:
   provider: google
 
 layout:
+  System:
+    style: row
+    columns: 3
   Media:
     style: row
     columns: 3

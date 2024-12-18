@@ -2,6 +2,61 @@
 # For configuration options and examples, please see:
 # https://gethomepage.dev/latest/configs/services
 
+- System:
+  - CPU:
+      widget:
+        type: glances
+        url: https://glances.{{HOMEPAGE_VAR_DOMAIN}}
+        username: {{HOMEPAGE_VAR_GLANCES_USER}} # optional if auth enabled in Glances
+        password: {{HOMEPAGE_VAR_GLANCES_PASSWORD}} # optional if auth enabled in Glances
+        version: 4 # required only if running glances v4 or higher, defaults to 3
+        metric: cpu
+
+  - RAM:
+      widget:
+        type: glances
+        url: https://glances.{{HOMEPAGE_VAR_DOMAIN}}
+        username: {{HOMEPAGE_VAR_GLANCES_USER}} # optional if auth enabled in Glances
+        password: {{HOMEPAGE_VAR_GLANCES_PASSWORD}} # optional if auth enabled in Glances
+        version: 4 # required only if running glances v4 or higher, defaults to 3
+        metric: memory
+
+  - GPU:
+      widget:
+        type: glances
+        url: https://glances.{{HOMEPAGE_VAR_DOMAIN}}
+        username: {{HOMEPAGE_VAR_GLANCES_USER}} # optional if auth enabled in Glances
+        password: {{HOMEPAGE_VAR_GLANCES_PASSWORD}} # optional if auth enabled in Glances
+        version: 4 # required only if running glances v4 or higher, defaults to 3
+        metric: gpu:nvidia0
+
+  - SSD Disk:
+      widget:
+        type: glances
+        url: https://glances.{{HOMEPAGE_VAR_DOMAIN}}
+        username: {{HOMEPAGE_VAR_GLANCES_USER}} # optional if auth enabled in Glances
+        password: {{HOMEPAGE_VAR_GLANCES_PASSWORD}} # optional if auth enabled in Glances
+        version: 4 # required only if running glances v4 or higher, defaults to 3
+        metric: disk:sda
+
+  - HDD Disk:
+      widget:
+        type: glances
+        url: https://glances.{{HOMEPAGE_VAR_DOMAIN}}
+        username: {{HOMEPAGE_VAR_GLANCES_USER}} # optional if auth enabled in Glances
+        password: {{HOMEPAGE_VAR_GLANCES_PASSWORD}} # optional if auth enabled in Glances
+        version: 4 # required only if running glances v4 or higher, defaults to 3
+        metric: disk:sdb
+
+  - Network:
+      widget:
+        type: glances
+        url: https://glances.{{HOMEPAGE_VAR_DOMAIN}}
+        username: {{HOMEPAGE_VAR_GLANCES_USER}} # optional if auth enabled in Glances
+        password: {{HOMEPAGE_VAR_GLANCES_PASSWORD}} # optional if auth enabled in Glances
+        version: 4 # required only if running glances v4 or higher, defaults to 3
+        metric: network:eno1
+
 - Media:
   - Jellyseerr:
       icon: jellyseerr
@@ -96,7 +151,7 @@
   - Uptime:
       icon: uptime-kuma
       description: Uptime Monitor
-      href: https://up.{{HOMEPAGE_VAR_DOMAIN}}/
+      href: https://up.{{HOMEPAGE_VAR_DOMAIN}}/status/haivita
       widget:
         type: uptimekuma
         url: http://uptime-kuma:3001
@@ -127,21 +182,21 @@
         url: http://qbittorrent:8080
         username: {{HOMEPAGE_VAR_QBIT_USER}}
         password: {{HOMEPAGE_VAR_QBIT_PASSWORD}}
-  - "Home Assistant":
-      icon: home-assistant
-      description: Smart Home Manager
-      href: https://home.{{HOMEPAGE_VAR_DOMAIN}}/
-      container: homeassistant
-      widget:
-        type: homeassistant
-        url: http://homeassistant:8123
-        key: {{HOMEPAGE_VAR_HOME_ASSISTANT_API_KEY}}
-        custom:
-          - template: "{{states.switch|selectattr('state','equalto','on')|list|length}}"
-            label: switches on
-          - state: weather.forecast_home
-            label: wind speed
-            value: "{attributes.wind_speed} {attributes.wind_speed_unit}"
+  # - "Home Assistant":
+  #     icon: home-assistant
+  #     description: Smart Home Manager
+  #     href: https://home.{{HOMEPAGE_VAR_DOMAIN}}/
+  #     container: homeassistant
+  #     widget:
+  #       type: homeassistant
+  #       url: http://homeassistant:8123
+  #       key: {{HOMEPAGE_VAR_HOME_ASSISTANT_API_KEY}}
+  #       custom:
+  #         - template: "{{states.switch|selectattr('state','equalto','on')|list|length}}"
+  #           label: switches on
+  #         - state: weather.forecast_home
+  #           label: wind speed
+  #           value: "{attributes.wind_speed} {attributes.wind_speed_unit}"
   - "Open WebUI":
       icon: open-webui-light
       description: Chatbot
