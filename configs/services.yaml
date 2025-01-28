@@ -165,11 +165,11 @@
       widget:
         type: caddy
         url: http://caddy:2019
-  - "DDNS Updater":
-      icon: ddns-updater
-      description: Container to update DNS records
-      container: ddns-updater
-      href: https://ddns.{{HOMEPAGE_VAR_DOMAIN}}/
+  # - "DDNS Updater":
+  #     icon: ddns-updater
+  #     description: Container to update DNS records
+  #     container: ddns-updater
+  #     href: https://ddns.{{HOMEPAGE_VAR_DOMAIN}}/
 
 - Services:
   - qBittorrent:
