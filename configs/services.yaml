@@ -152,6 +152,7 @@
       icon: uptime-kuma
       description: Uptime Monitor
       href: https://up.{{HOMEPAGE_VAR_DOMAIN}}/status/haivita
+      container: uptime-kuma
       widget:
         type: uptimekuma
         url: http://uptime-kuma:3001
@@ -165,6 +166,15 @@
       widget:
         type: caddy
         url: http://caddy:2019
+  - Speedtest:
+      icon: speedtest-tracker
+      href: https://speed.haivita.top
+      description: Monitor internet speed
+      container: speedtest-tracker
+      widget:
+        type: speedtest
+        url: http://speedtest-tracker:80
+        bitratePrecision: 3 # optional, default is 0
   # - "DDNS Updater":
   #     icon: ddns-updater
   #     description: Container to update DNS records
