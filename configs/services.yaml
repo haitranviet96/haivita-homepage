@@ -143,6 +143,7 @@
       icon: whats-up-docker-light
       description: Docker Container Version Manager
       href: https://wud.{{HOMEPAGE_VAR_DOMAIN}}/
+      container: wud
       widget:
         type: whatsupdocker
         url: http://wud:3000
