@@ -54,6 +54,7 @@
       disk:
         - /Root
         - /Home
+        - /BackupDisk
         - /Data
       #   - /media/Data
       diskUnits: bytes # optional, bytes (default) or bbytes. Only applies to disk

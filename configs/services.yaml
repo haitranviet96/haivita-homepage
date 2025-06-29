@@ -140,7 +140,7 @@
 
 - Data1:
   - WUD:
-      icon: whats-up-docker-light
+      icon: whats-up-docker
       description: Docker Container Version Manager
       href: https://wud.{{HOMEPAGE_VAR_DOMAIN}}/
       container: wud
