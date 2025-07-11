@@ -16,9 +16,17 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock
     restart: unless-stopped
     networks:
+      - multimedia
+      - tools
       - webserver
 
 networks:
+  multimedia:
+    name: multimedia
+    external: true
+  tools:
+    name: tools
+    external: true
   webserver:
     name: webserver
     external: true
