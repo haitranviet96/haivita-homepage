@@ -242,12 +242,12 @@
   #         - state: weather.forecast_home
   #           label: wind speed
   #           value: "{attributes.wind_speed} {attributes.wind_speed_unit}"
-  - "Open WebUI":
-      icon: open-webui-light
-      description: Chatbot
-      href: https://chat.{{HOMEPAGE_VAR_DOMAIN}}/
-      container: open-webui
-      server: my-docker
+  # - "Open WebUI":
+  #     icon: open-webui-light
+  #     description: Chatbot
+  #     href: https://chat.{{HOMEPAGE_VAR_DOMAIN}}/
+  #     container: open-webui
+  #     server: my-docker
   - "File":
       icon: filebrowser
       href: https://file.{{HOMEPAGE_VAR_DOMAIN}}
