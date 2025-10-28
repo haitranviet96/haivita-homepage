@@ -29,7 +29,7 @@ services:
       - 3000
     volumes:
       - ./configs:/app/config
-      - ${HOME}/homepage/images:/app/public/images
+      - /home/haitv/homepage/images:/app/public/images
     restart: unless-stopped
     networks:
       - multimedia
