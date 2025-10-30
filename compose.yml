@@ -28,7 +28,7 @@ services:
     ports:
       - 3000
     volumes:
-      - /srv/homepage/configs:/app/config
+      - /home/haitv/homepage/configs:/app/config
       - /home/haitv/homepage/images:/app/public/images
     restart: unless-stopped
     networks:
