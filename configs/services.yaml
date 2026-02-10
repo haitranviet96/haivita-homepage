@@ -7,8 +7,8 @@
       widget:
         type: glances
         url: https://glances.{{HOMEPAGE_VAR_DOMAIN}}
-        username: {{HOMEPAGE_VAR_GLANCES_USER}} # optional if auth enabled in Glances
-        password: {{HOMEPAGE_VAR_GLANCES_PASSWORD}} # optional if auth enabled in Glances
+        username: {{HOMEPAGE_VAR_CADDY_USER}} # optional if auth enabled in Glances
+        password: {{HOMEPAGE_VAR_CADDY_PASSWORD}} # optional if auth enabled in Glances
         version: 4 # required only if running glances v4 or higher, defaults to 3
         metric: cpu
 
@@ -16,8 +16,8 @@
       widget:
         type: glances
         url: https://glances.{{HOMEPAGE_VAR_DOMAIN}}
-        username: {{HOMEPAGE_VAR_GLANCES_USER}} # optional if auth enabled in Glances
-        password: {{HOMEPAGE_VAR_GLANCES_PASSWORD}} # optional if auth enabled in Glances
+        username: {{HOMEPAGE_VAR_CADDY_USER}} # optional if auth enabled in Glances
+        password: {{HOMEPAGE_VAR_CADDY_PASSWORD}} # optional if auth enabled in Glances
         version: 4 # required only if running glances v4 or higher, defaults to 3
         metric: memory
 
@@ -25,8 +25,8 @@
       widget:
         type: glances
         url: https://glances.{{HOMEPAGE_VAR_DOMAIN}}
-        username: {{HOMEPAGE_VAR_GLANCES_USER}} # optional if auth enabled in Glances
-        password: {{HOMEPAGE_VAR_GLANCES_PASSWORD}} # optional if auth enabled in Glances
+        username: {{HOMEPAGE_VAR_CADDY_USER}} # optional if auth enabled in Glances
+        password: {{HOMEPAGE_VAR_CADDY_PASSWORD}} # optional if auth enabled in Glances
         version: 4 # required only if running glances v4 or higher, defaults to 3
         metric: gpu:nvidia0
 
@@ -34,8 +34,8 @@
       widget:
         type: glances
         url: https://glances.{{HOMEPAGE_VAR_DOMAIN}}
-        username: {{HOMEPAGE_VAR_GLANCES_USER}} # optional if auth enabled in Glances
-        password: {{HOMEPAGE_VAR_GLANCES_PASSWORD}} # optional if auth enabled in Glances
+        username: {{HOMEPAGE_VAR_CADDY_USER}} # optional if auth enabled in Glances
+        password: {{HOMEPAGE_VAR_CADDY_PASSWORD}} # optional if auth enabled in Glances
         version: 4 # required only if running glances v4 or higher, defaults to 3
         metric: disk:sda
 
@@ -43,8 +43,8 @@
       widget:
         type: glances
         url: https://glances.{{HOMEPAGE_VAR_DOMAIN}}
-        username: {{HOMEPAGE_VAR_GLANCES_USER}} # optional if auth enabled in Glances
-        password: {{HOMEPAGE_VAR_GLANCES_PASSWORD}} # optional if auth enabled in Glances
+        username: {{HOMEPAGE_VAR_CADDY_USER}} # optional if auth enabled in Glances
+        password: {{HOMEPAGE_VAR_CADDY_PASSWORD}} # optional if auth enabled in Glances
         version: 4 # required only if running glances v4 or higher, defaults to 3
         metric: disk:sdb
 
@@ -52,8 +52,8 @@
       widget:
         type: glances
         url: https://glances.{{HOMEPAGE_VAR_DOMAIN}}
-        username: {{HOMEPAGE_VAR_GLANCES_USER}} # optional if auth enabled in Glances
-        password: {{HOMEPAGE_VAR_GLANCES_PASSWORD}} # optional if auth enabled in Glances
+        username: {{HOMEPAGE_VAR_CADDY_USER}} # optional if auth enabled in Glances
+        password: {{HOMEPAGE_VAR_CADDY_PASSWORD}} # optional if auth enabled in Glances
         version: 4 # required only if running glances v4 or higher, defaults to 3
         metric: network:br0
 
