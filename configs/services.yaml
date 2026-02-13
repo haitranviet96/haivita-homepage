@@ -197,12 +197,6 @@
         type: speedtest
         url: http://speedtest-tracker:80
         bitratePrecision: 3 # optional, default is 0
-  - "DDNS Updater":
-      icon: ddns-updater
-      description: Container to update DNS records
-      container: ddns-updater
-      server: my-docker
-      href: https://ddns.{{HOMEPAGE_VAR_DOMAIN}}/
   - Netdata:
       icon: netdata
       description: Real-Time Monitoring
