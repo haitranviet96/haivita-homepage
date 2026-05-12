@@ -53,8 +53,8 @@
       mem: false # optional, enabled by default, disable by setting to false
       disk:
         - /Root
-        - /Home
-        - /BackupDisk
+        - /BackupSystem
+        - /BackupData
         - /Data
       #   - /media/Data
       diskUnits: bytes # optional, bytes (default) or bbytes. Only applies to disk
